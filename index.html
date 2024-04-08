@@ -5,9 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency_converter</title>
+    <link rel="stylesheet" href="/currency_converter/asset/css/style.css">
 </head>
 
 <body>
+    <main>
+        <H1>Conversor de Moneda Nacional</H1>
+        <section class="first-section">
+            <h2>Pesos CLP</h2>
+            <input type="text" class="input" placeholder="Ingrese el monto en CLP">
+            <h3>Moneda a Convertir </h3>
+            <select class="select">
+                <option>Seleccion de Moneda</option>
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+            </select>
+            <button class="btn">Buscar</button>
+            <span class="resultado"></span>
+        </section>
+        <div id="graficaContenedor">
+            <canvas class="grafico"></canvas>
+        </div>
+    </main>
+
+    <script src="/currency_converter/asset/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 
